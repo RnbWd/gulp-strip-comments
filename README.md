@@ -33,21 +33,21 @@ gulp.task('default', function () {
 Type: `boolean`  
 Default: `true`
 
-This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [strip-comment](https://github.com/jonschlinkert/strip-comments#usage).
+This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [strip-comments](https://github.com/jonschlinkert/strip-comments#usage).
 
 #### options.line
 
 Type: `boolean`  
 Default: `false`
 
-Enable [strip-comments .line](https://github.com/jonschlinkert/strip-comments#line).
+Enable [strip .line](https://github.com/jonschlinkert/strip-comments#line). Cannot be used concurrently with options.block.
 
 #### options.block
 
 Type: `boolean`  
 Default: `false`
 
-Enable [strip-comments .block](https://github.com/jonschlinkert/strip-comments#block).
+Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with options.line.
 
 
 ## License
