@@ -1,0 +1,33 @@
+{
+  "name": "gulp-strip-comments",
+  "version": "1.0.0",
+  "description": "Strip comments",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RnbWd/gulp-strip-comments"
+  },
+  "keywords": [
+    "gulpplugin",
+    "strip",
+    "comments"
+  ],
+  "author": "RnbWd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
+  },
+  "homepage": "https://github.com/RnbWd/gulp-strip-comments",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "strip-comments": "^0.3.2",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.0"
+  }
+}
