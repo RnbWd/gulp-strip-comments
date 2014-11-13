@@ -33,7 +33,7 @@ gulp.task('default', function () {
 Type: `boolean`  
 Default: `true`
 
-This API differs from the original in that options.safe defaults to *true* if not specified. Explicity set options.safe to *false* if you want to turn off this feature. See [strip-comment](https://github.com/jonschlinkert/strip-comments#usage).
+This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [strip-comment](https://github.com/jonschlinkert/strip-comments#usage).
 
 #### options.line
 
