@@ -40,14 +40,14 @@ This API differs from the original. Explicity set options.safe to *false* if you
 Type: `boolean`  
 Default: `false`
 
-Enable [strip .line](https://github.com/jonschlinkert/strip-comments#line). Cannot be used concurrently with options.block.
+Enable [strip .line](https://github.com/jonschlinkert/strip-comments#line). Cannot be used concurrently with [options.block](https://github.com/RnbWd/gulp-strip-comments#optionsblock).
 
 #### options.block
 
 Type: `boolean`  
 Default: `false`
 
-Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with options.line.
+Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with [options.line](https://github.com/RnbWd/gulp-strip-comments#optionsline).
 
 
 ## License
