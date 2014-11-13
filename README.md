@@ -1,4 +1,4 @@
-# [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://travis-ci.org/rnbwd/gulp-strip-comments.svg?branch=master)](https://travis-ci.org/rnbwd/gulp-strip-comments)
+# [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://travis-ci.org/RnbWd/gulp-strip-comments.svg)](https://travis-ci.org/RnbWd/gulp-strip-comments)
 
 > [Strip-comments](https://github.com/jonschlinkert/strip-comments) from code. Removes both line comments and/or block comments, with options to leave protected comments unharmed.
 
