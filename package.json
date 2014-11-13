@@ -1,7 +1,7 @@
 {
   "name": "gulp-strip-comments",
   "version": "1.0.0",
-  "description": "Strip comments",
+  "description": "Strip comments from code",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
