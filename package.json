@@ -1,11 +1,20 @@
 {
   "name": "gulp-strip-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strip comments from code",
-  "main": "index.js",
+  "author": {
+    "name": "David Wisner",
+    "email": "dwisner6@gmail.com"
+  },
   "scripts": {
     "test": "mocha"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/RnbWd/gulp-strip-comments"
@@ -15,7 +24,6 @@
     "strip",
     "comments"
   ],
-  "author": "RnbWd",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
