@@ -1,6 +1,6 @@
 {
   "name": "gulp-strip-comments",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Strip comments from code",
   "author": {
     "name": "David Wisner",
