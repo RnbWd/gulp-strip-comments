@@ -1,11 +1,10 @@
-# [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://travis-ci.org/RnbWd/gulp-strip-comments.svg)](https://travis-ci.org/RnbWd/gulp-strip-comments)
-[![Dependency Status](https://img.shields.io/david/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://david-dm.org/RnbWd/gulp-strip-comments)
+# [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://travis-ci.org/RnbWd/gulp-strip-comments.svg)](https://travis-ci.org/RnbWd/gulp-strip-comments) [![Dependency Status](https://img.shields.io/david/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://david-dm.org/RnbWd/gulp-strip-comments)
 
 > [Strip-comments](https://github.com/jonschlinkert/strip-comments) from code. Removes both line comments and/or block comments, with options to leave protected comments unharmed.
 
-*Issues with the output should be reported on the strip-comments [issue tracker](https://github.com/jonschlinkert/strip-comments/issues).*
-
 [![NPM](https://nodei.co/npm/gulp-strip-comments.png?downloads=true)](https://nodei.co/npm/gulp-strip-comments/)
+
+*Issues with the output should be reported on the strip-comments [issue tracker](https://github.com/jonschlinkert/strip-comments/issues).*
 
 ## Install
 
