@@ -2,7 +2,7 @@
 
 > [Strip-comments](https://github.com/jonschlinkert/strip-comments) from code. Removes both line comments and/or block comments, with options to leave protected comments unharmed.
 
-[![NPM](https://nodei.co/npm/gulp-strip-comments.png?downloads=true)](https://nodei.co/npm/gulp-strip-comments/)
+[![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
 *Issues with the output should be reported on the strip-comments [issue tracker](https://github.com/jonschlinkert/strip-comments/issues).*
 
