@@ -50,14 +50,6 @@ Default: `false`
 
 Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with `line` or `first`
 
-#### options.first
-
-Type: `boolean`
-Default: `false`
-
-Enable [strip .first](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with `block` or line`
-
-
 ## License
 
 MIT © [RnbWd](https://github.com/RnbWd)
