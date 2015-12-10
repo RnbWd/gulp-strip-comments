@@ -41,14 +41,21 @@ This API differs from the original. Explicity set options.safe to *false* if you
 Type: `boolean`
 Default: `false`
 
-Enable [strip .line](https://github.com/jonschlinkert/strip-comments#line). Cannot be used concurrently with [options.block](https://github.com/RnbWd/gulp-strip-comments#optionsblock).
+Enable [strip .line](https://github.com/jonschlinkert/strip-comments#line). Cannot be used concurrently with `block` or `first`
 
 #### options.block
 
 Type: `boolean`
 Default: `false`
 
-Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with [options.line](https://github.com/RnbWd/gulp-strip-comments#optionsline).
+Enable [strip .block](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with `line` or `first`
+
+#### options.first
+
+Type: `boolean`
+Default: `false`
+
+Enable [strip .first](https://github.com/jonschlinkert/strip-comments#block). Cannot be used concurrently with `block` or line`
 
 
 ## License

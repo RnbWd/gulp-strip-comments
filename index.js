@@ -16,7 +16,7 @@ function gulpStripComments(options){
   var line = (typeof opts.line === 'boolean' && opts.line === true);
   var safety = (typeof opts.safe === 'boolean' && opts.safe === false);
 
-var stream = through.obj(function(file, enc, cb){  
+var stream = through.obj(function(file, enc, cb){
 
   if (file.isNull()) {
     cb(null, file);
@@ -28,7 +28,7 @@ var stream = through.obj(function(file, enc, cb){
     return;
   }
 
-  if (noopt || (!block && !line)) {
+  if (noopt || (!block && !line && !first)) {
     strip = stripComments;
   } else if (block && line) {
     this.emit('error', new PluginError(PLUGIN_NAME, 'Please choose either block or line, not both!'));
