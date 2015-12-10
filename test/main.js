@@ -20,11 +20,11 @@ describe('strip-comments', function(){
 
   it('should remove all comments', function(done){
     var fakeFile = getFakeFile('/* A banner  */ Hello world // protected');
-    
+
     var stream = strip();
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal(' Hello world');
+      newFile.contents.toString().should.equal(' Hello world ');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -33,7 +33,7 @@ describe('strip-comments', function(){
 
   it('should only remove unsafe block comments', function(done){
     var fakeFile = getFakeFile('/!* A banner */ Hello world /* unprotected */ // protected');
-    
+
     var stream = strip({block: true});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
@@ -46,11 +46,11 @@ describe('strip-comments', function(){
 
   it('should only remove inline comments', function(done){
     var fakeFile = getFakeFile('/* A banner */ Hello world // unprotected');
-    
+
     var stream = strip({line: true});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal('/* A banner */ Hello world');
+      newFile.contents.toString().should.equal('/* A banner */ Hello world ');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -59,7 +59,7 @@ describe('strip-comments', function(){
 
   it('should not remove safe inline comments', function(done){
     var fakeFile = getFakeFile('/* A banner */ Hello world //! protected');
-    
+
     var stream = strip({line: true});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
@@ -72,11 +72,11 @@ describe('strip-comments', function(){
 
   it('should remove all inline comments', function(done){
     var fakeFile = getFakeFile('/* A banner */ Hello world //! unprotected');
-    
+
     var stream = strip({line: true, safe: false});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal('/* A banner */ Hello world');
+      newFile.contents.toString().should.equal('/* A banner */ Hello world ');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -85,7 +85,7 @@ describe('strip-comments', function(){
 
   it('should throw error', function(done){
     var fakeFile = getFakeFile('/* A banner */ Hello world //! unprotected');
-    
+
     var stream = strip({line: true, block: true});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
