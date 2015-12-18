@@ -6,7 +6,7 @@
 
 *Issues with the output should be reported on the strip-comments [issue tracker](https://github.com/jonschlinkert/strip-comments/issues).*
 
-***** __Depreciated__ `v1.1.0` & 'v1.1.1' *****
+** __Depreciated__ `v1.1.0` & `v1.1.1` **
 
 run `npm install` and the non-breaking API package will be installed
 
