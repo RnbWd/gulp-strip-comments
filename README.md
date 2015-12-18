@@ -6,6 +6,14 @@
 
 *Issues with the output should be reported on the strip-comments [issue tracker](https://github.com/jonschlinkert/strip-comments/issues).*
 
+***** __Depreciated__ `v1.1.0` & 'v1.1.1' *****
+
+run `npm install` and the non-breaking API package will be installed
+
+*`gulp-strip-comments@1.1.2` === `gulp-strip-comments@1.0.2`*
+
+The depreciated modules are flagged and npm will give a warning if 'v1.1.0' or 'v1.1.1' are installed. It's impossible to revert - so the default behavior for npm will be to install `v1.1.2` - which does not have any breaking changes and shouldn't require any changes in existing package.json files.
+
 ## Install
 
 ```sh

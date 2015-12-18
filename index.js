@@ -28,7 +28,7 @@ var stream = through.obj(function(file, enc, cb){
     return;
   }
 
-  if (noopt || (!block && !line && !first)) {
+  if (noopt || (!block && !line)) {
     strip = stripComments;
   } else if (block && line) {
     this.emit('error', new PluginError(PLUGIN_NAME, 'Please choose either block or line, not both!'));

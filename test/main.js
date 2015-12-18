@@ -24,7 +24,7 @@ describe('strip-comments', function(){
     var stream = strip();
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal(' Hello world ');
+      newFile.contents.toString().should.equal(' Hello world');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -50,7 +50,7 @@ describe('strip-comments', function(){
     var stream = strip({line: true});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal('/* A banner */ Hello world ');
+      newFile.contents.toString().should.equal('/* A banner */ Hello world');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -76,7 +76,7 @@ describe('strip-comments', function(){
     var stream = strip({line: true, safe: false});
     stream.on('data', function (newFile) {
       should.exist(newFile.contents);
-      newFile.contents.toString().should.equal('/* A banner */ Hello world ');
+      newFile.contents.toString().should.equal('/* A banner */ Hello world');
     });
     stream.once('end', done);
     stream.write(fakeFile);
@@ -101,6 +101,3 @@ describe('strip-comments', function(){
   });
 
 });
-
-
-
