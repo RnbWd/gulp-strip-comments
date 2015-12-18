@@ -10,7 +10,7 @@
 
 `npm install gulp-strip-comments@latest / <1.1.3> / <1.1.2> / <^1.x> / <etc>` is equivalent to `gulp-strip-comments@1.0.2`
 
-The deprecated modules are flagged and npm will give a warning if `v1.1.0` or `v1.1.1` are installed, which will only happen if they are explicity required (eg. `gulp-strip-comments@<1.1.0>/<1.1.1>`). It's impossible to revert modules in npm - so current version is `v1.1.3` - which does not have any breaking changes and shouldn't require any changes to be made in existing `package.json` files. (`v1.1.2` is identical to `v1.1.3` b/c it was published twice by accident)
+The deprecated modules are flagged and npm will give a warning if `v1.1.0` or `v1.1.1` are installed, which will only happen if they are explicity required (eg. `gulp-strip-comments@<1.1.0>/<1.1.1>`). It's impossible to revert modules in npm - so current version is `v1.1.2` - which does not have any breaking changes and shouldn't require any changes to be made in existing `package.json` files. (`v1.1.2` is identical to `v1.1.3` b/c it was published twice by accident)
 
 ## Install
 
