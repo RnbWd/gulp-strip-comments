@@ -10,16 +10,13 @@
     "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
   },
   "dependencies": {
+    "decomment": "^0.4.2",
     "gulp-util": "^3.0.1",
-    "strip-comments": "^0.3.2",
-    "through2": "^0.6.3"
+    "through2": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "^2.0.1",
-    "should": "^4.3.0"
-  },
-  "engines": {
-    "node": ">=0.10.0"
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
   },
   "files": [
     "index.js"
