@@ -29,12 +29,11 @@ gulp.task('default', function () {
 
 ### strip(options)
 
-#### options.safe
+##### options.safe ⇒ Boolean
+* `true (default)` - keep multi-line comments that start with `/*!`
+* `false` - remove all multi-line comments
 
-Type: `boolean`
-Default: `true`
-
-This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment).
+This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment#api).
 
 ##### options.trim ⇒ Boolean
 * `false (default)` - do not trim comments
