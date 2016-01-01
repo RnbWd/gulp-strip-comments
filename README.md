@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
-`v2.0.1`  has better overall coverage and more support for `angular`. Please look at [releases](https://github.com/RnbWd/gulp-strip-comments/releases) to see which methods from `v1.x` are depreciated.
+`v2.x`  has better overall coverage, bug fixes, and more support for `angular`. Please look at [releases](https://github.com/RnbWd/gulp-strip-comments/releases) to see which methods from `v1.x` are depreciated.
 
 ## Install
 
