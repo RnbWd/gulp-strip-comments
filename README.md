@@ -1,6 +1,6 @@
 # [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments)
 
-> [decomment](https://github.com/vitaly-t/decomment/tree/v.0.4.2) - Removes comments from JSON, JavaScript, CSS and HTML.
+> [decomment](https://github.com/vitaly-t/decomment/) - Removes comments from JSON, JavaScript, CSS and HTML.
 
 [![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
@@ -34,7 +34,23 @@ gulp.task('default', function () {
 Type: `boolean`
 Default: `true`
 
-This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment/tree/v.0.4.2#api).
+This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment).
+
+##### options.trim ⇒ Boolean
+* `false (default)` - do not trim comments
+* `true` - remove empty lines that follow removed full-line comments
+
+### strip.text([options]) ⇒ String
+
+CSS is the most frequent example of where this method is to be used.
+
+Please note that while comment blocks located inside `''`, `""` or \`\` are not removed,
+the same as for JSON or JavaScript, you should not use this method for JSON or JavaScript,
+as it can break your regular expressions.
+
+### strip.html([options]) ⇒ String
+
+It instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all `<!-- comment -->` entries from it according to the `options`.
 
 ## License
 

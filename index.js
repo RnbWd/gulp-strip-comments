@@ -7,33 +7,44 @@ var PluginError = gutil.PluginError;
 
 var PLUGIN_NAME = 'gulp-strip-comments';
 
-function gulpStripComments(options){
+function main(options, func) {
 
-  var opts = options || {};
-  var safety = (typeof opts.safe === 'boolean' && opts.safe === false);
+    var opts = options || {};
+    opts.safe = (typeof opts.safe === 'undefined') ? true : false;
+    var stream = through.obj(function (file, enc, cb) {
 
-var stream = through.obj(function(file, enc, cb){
+        if (file.isNull()) {
+            cb(null, file);
+            return;
+        }
 
-  if (file.isNull()) {
-    cb(null, file);
-    return;
-  }
+        if (file.isStream()) {
+            cb(new PluginError(PLUGIN_NAME, 'Streaming not supported'));
+            return;
+        }
 
-  if (file.isStream()) {
-    cb(new PluginError(PLUGIN_NAME, 'Streaming not supported'));
-    return;
-  }
+        if (file.isBuffer()) {
+            file.contents = new Buffer(func(file.contents.toString(), opts));
+        }
 
-    if (file.isBuffer()) {
-      file.contents = new Buffer(strip(file.contents.toString(), {safe: safety ? false : true}));
-    }
+        this.push(file);
 
-    this.push(file);
+        return cb();
+    });
 
-    return cb();
-  });
-
-  return stream;
+    return stream;
 }
+
+function gulpStripComments(options) {
+    return main(options, strip);
+}
+
+gulpStripComments.text = function (options) {
+    return main(options, strip.text);
+};
+
+gulpStripComments.html = function (options) {
+    return main(options, strip.html);
+};
 
 module.exports = gulpStripComments;

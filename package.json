@@ -10,7 +10,7 @@
     "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
   },
   "dependencies": {
-    "decomment": "^0.4.2",
+    "decomment": "^0.6.4",
     "gulp-util": "^3.0.1",
     "through2": "^2.0.0"
   },
