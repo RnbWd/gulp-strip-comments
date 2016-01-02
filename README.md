@@ -1,6 +1,9 @@
-# [gulp](http://gulpjs.com)-strip-comments [![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments) [![David](https://david-dm.org/rnbwd/gulp-strip-comments.svg)](https://david-dm.org/rnbwd/gulp-strip-comments)
+# [gulp](http://gulpjs.com)-strip-comments
 
-> [decomment](https://github.com/vitaly-t/decomment/) - Removes comments from JSON, JavaScript, CSS and HTML.
+[![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments)
+[![David](https://david-dm.org/rnbwd/gulp-strip-comments.svg)](https://david-dm.org/rnbwd/gulp-strip-comments)
+
+> [decomment](https://github.com/vitaly-t/decomment/) - Removes comments from JSON, JavaScript, CSS, HTML, etc.
 
 [![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
