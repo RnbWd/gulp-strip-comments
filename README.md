@@ -38,21 +38,28 @@ gulp.task('default', function () {
 
 This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment#api).
 
+##### options.space ⇒ Boolean
+
+* `false (default)` - remove comment blocks entirely
+* `true` - replace comment blocks with white spaces where needed, in order to preserve the original line + column position of every code element.
+
+NOTE: When this option is enabled, option `trim` is ignored.
+
 ##### options.trim ⇒ Boolean
 * `false (default)` - do not trim comments
 * `true` - remove empty lines that follow removed full-line comments
 
+NOTE: This option has no effect when option `space` is enabled.
+
 ### strip.text([options]) ⇒ String
 
-CSS is the most frequent example of where this method is to be used.
+This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
 
-Please note that while comment blocks located inside `''`, `""` or \`\` are not removed,
-the same as for JSON or JavaScript, you should not use this method for JSON or JavaScript,
-as it can break your regular expressions.
+Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this method for JSON or JavaScript, as it can break your regular expressions.
 
 ### strip.html([options]) ⇒ String
 
-It instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all `<!-- comment -->` entries from it according to the `options`.
+Instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all `<!-- comment -->` entries from it according to the `options`.
 
 ## License
 
