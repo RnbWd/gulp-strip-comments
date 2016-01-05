@@ -59,7 +59,7 @@ Please note that while the same rules apply for the text blocks (`''`, `""` and 
 
 ### strip.html([options]) ⇒ String
 
-Instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all `<!-- comment -->` entries from it according to the `options`.
+Unlike the default method, it instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all <!-- comment --> entries from it according to the `options`.
 
 ## License
 
