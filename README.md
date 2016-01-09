@@ -7,7 +7,16 @@
 
 [![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
-`v2.x`  has better overall coverage, bug fixes, and more support for `angular`. Please look at [releases](https://github.com/RnbWd/gulp-strip-comments/releases) to see which methods from `v1.x` are depreciated.
+## Features
+
+* Removes both single and multi-line comments from JSON, JavaScript and CSS/Text
+* Automatically recognizes HTML and removes all `<!-- comments -->` from it
+* Does not change layout / formatting of the original document
+* Removes lines that have only comments on them
+* Compatible with CSS3, JSON5 and ECMAScript 6
+
+This library does not support mixed content - HTML with JavaScript or CSS in it.
+Once the input code is recognized as HTML, only the HTML comments will be removed from it. More information can be found in the [Decomment](https://github.com/vitaly-t/decomment) repo.
 
 ## Install
 

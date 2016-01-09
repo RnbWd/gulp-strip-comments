@@ -1,17 +1,17 @@
 {
   "name": "gulp-strip-comments",
   "description": "Strip comments from code",
-  "version": "2.1.2",
-  "author": {
-    "name": "David Wisner",
-    "email": "dwisner6@gmail.com"
-  },
+  "version": "2.1.1",
+  "author": "David Wisner <dwisner6@gmail.com>",
+  "contributors": [
+    "Vitaly Tomilov <vitaly.tomilov@gmail.com>"
+  ],
   "bugs": {
     "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
   },
   "dependencies": {
-    "decomment": "^0.7.4",
-    "gulp-util": "^3.0.1",
+    "decomment": "^0.7.5",
+    "gulp-util": "^3.0.7",
     "through2": "^2.0.0"
   },
   "devDependencies": {
@@ -23,9 +23,19 @@
   ],
   "homepage": "https://github.com/RnbWd/gulp-strip-comments",
   "keywords": [
-    "comments",
+    "strip-comments",
     "gulpplugin",
-    "strip"
+    "strip",
+    "gulp",
+    "comment",
+    "decomment",
+    "remove",
+    "clean",
+    "stream",
+    "minimize",
+    "reduce",
+    "remove",
+    "comments"
   ],
   "license": "MIT",
   "repository": {
