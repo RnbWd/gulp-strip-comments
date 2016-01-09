@@ -1,10 +1,9 @@
 # [gulp](http://gulpjs.com)-strip-comments
 
-[![npm](https://img.shields.io/npm/v/gulp-strip-comments.svg)](https://www.npmjs.com/package/gulp-strip-comments)
 [![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments)
-[![npm](https://img.shields.io/npm/dt/gulp-strip-comments.svg)](https://www.npmjs.com/package/gulp-strip-comments)
+[![npm](https://img.shields.io/npm/v/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
 [![David](https://david-dm.org/rnbwd/gulp-strip-comments.svg)](https://david-dm.org/rnbwd/gulp-strip-comments)
-
+[![npm](https://img.shields.io/npm/dt/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
 
 
 > [decomment](https://github.com/vitaly-t/decomment/) - Removes comments from JSON, JavaScript, CSS, HTML, etc.
