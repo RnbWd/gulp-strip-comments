@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "decomment": "^0.7.5",
-    "gulp-util": "^3.0.7",
-    "through2": "^2.0.0"
+    "gulp-util": "3.0",
+    "through2": "2.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "should": "^8.0.2"
+    "istanbul": "0.4",
+    "jasmine-node": "1.x"
   },
   "files": [
     "index.js"
@@ -43,6 +43,8 @@
     "url": "https://github.com/RnbWd/gulp-strip-comments"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jasmine-node test",
+    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
+    "travis": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   }
 }

@@ -1,50 +1,34 @@
-/* jshint node: true */
 'use strict';
-var through = require('through2');
-var gutil = require('gulp-util');
-var strip = require('decomment');
-var PluginError = gutil.PluginError;
 
-var PLUGIN_NAME = 'gulp-strip-comments';
+var through = require('through2');
+var decomment = require('decomment');
+var PluginError = require('gulp-util').PluginError;
 
 function main(options, func) {
-
-    var opts = options || {};
-    opts.safe = (typeof opts.safe === 'undefined') ? true : false;
-    var stream = through.obj(function (file, enc, cb) {
-
+    return through.obj(function (file, enc, cb) {
         if (file.isNull()) {
             cb(null, file);
             return;
         }
-
         if (file.isStream()) {
-            cb(new PluginError(PLUGIN_NAME, 'Streaming not supported'));
-            return;
+            cb(new PluginError("gulp-strip-comments", "Streaming not supported."));
         }
-
-        if (file.isBuffer()) {
-            file.contents = new Buffer(func(file.contents.toString(), opts));
-        }
-
+        file.contents = new Buffer(func(file.contents.toString(), options));
         this.push(file);
-
         return cb();
     });
-
-    return stream;
 }
 
-function gulpStripComments(options) {
-    return main(options, strip);
+function gulpDecomment(options) {
+    return main(options, decomment);
 }
 
-gulpStripComments.text = function (options) {
-    return main(options, strip.text);
+gulpDecomment.text = function (options) {
+    return main(options, decomment.text);
 };
 
-gulpStripComments.html = function (options) {
-    return main(options, strip.html);
+gulpDecomment.html = function (options) {
+    return main(options, decomment.html);
 };
 
-module.exports = gulpStripComments;
+module.exports = gulpDecomment;
