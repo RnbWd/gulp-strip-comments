@@ -1,6 +1,7 @@
 # [gulp](http://gulpjs.com)-strip-comments
 
 [![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments)
+[![Coverage Status](https://coveralls.io/repos/RnbWd/gulp-strip-comments/badge.svg?branch=master&service=github)](https://coveralls.io/github/RnbWd/gulp-strip-comments?branch=master)
 [![npm](https://img.shields.io/npm/v/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
 [![David](https://david-dm.org/rnbwd/gulp-strip-comments.svg)](https://david-dm.org/rnbwd/gulp-strip-comments)
 [![npm](https://img.shields.io/npm/dt/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
