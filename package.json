@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "decomment": "^0.7.5",
-    "gulp-util": "3.0",
-    "through2": "2.0"
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "2.x",
-    "istanbul": "0.4",
+    "istanbul": "^0.4.2",
     "jasmine-node": "1.x"
   },
   "files": [
