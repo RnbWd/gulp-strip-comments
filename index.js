@@ -31,16 +31,5 @@ gulpDecomment.html = function (options) {
     return main(options, decomment.html);
 };
 
-gulpDecomment.trim = function (options) {
-    return main(options, decomment.html);
-};
-
-gulpDecomment.space = function (options) {
-    return main(options, decomment.html);
-};
-
-gulpDecomment.safe = function (options) {
-    return main(options, decomment.html);
-};
 
 module.exports = gulpDecomment;

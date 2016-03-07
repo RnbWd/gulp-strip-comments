@@ -52,6 +52,8 @@ gulp.task('default', function () {
 
 See [decomment](https://github.com/vitaly-t/decomment#api) for examples and more information.
 
+### strip(options)
+
 ##### options.safe ⇒ Boolean
 
 * `false (default)` - remove all multi-line comments
@@ -73,23 +75,20 @@ NOTE: When this option is enabled, option `trim` is ignored.
 
 NOTE: This option has no effect when option `space` is enabled.
 
-#### decomment.text(text, [options]) ⇒ String
+#### strip.text(options) ⇒ String
 
-Unlike the default **decomment**, it instructs the library that `text` is not a JSON,
-JavaScript or HTML, rather a plain text that needs no parsing or validation,
-only to remove `//` and `/**/` comments from it according to the `options`.
+Unlike the default **strip** method, it instructs the library that `text` is not a JSON,K avaScript or HTML, rather a plain text that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
 
-This method is good for any text file that uses syntax `//` and `/**/` for comments,
-such as: `.CSS`, `.CPP`, `.H`, etc.
+This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
 
-Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`),
-you should not use this method for JSON or JavaScript, as it can break your regular expressions.
+Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this method for JSON or JavaScript, as it can break your regular expressions.
 
-### decomment.html(html, [options]) ⇒ String
+#### strip.html(options) ⇒ String
 
-Unlike the default **decomment** method, it instructs the library not to parse
+Unlike the default **strip** method, it instructs the library not to parse
 or validate the input in any way, rather assume it to be HTML, and remove all
 `<!-- comment -->` entries from it according to the `options`.
+
 
 ## License
 
