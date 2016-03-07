@@ -19,8 +19,15 @@
 * Removes lines that have only comments on them
 * Compatible with CSS3, JSON5 and ECMAScript 6
 
-This library does not support mixed content - HTML with JavaScript or CSS in it.
+The library does not support mixed content - HTML with JavaScript or CSS in it.
 Once the input code is recognized as HTML, only the HTML comments will be removed from it. More information can be found in the [Decomment](https://github.com/vitaly-t/decomment) repo.
+
+## Performance
+
+For JSON and JavaScript this library uses [esprima] to guarantee correct processing for regular expressions.
+
+As an example, it can process [AngularJS 1.5 Core](https://code.angularjs.org/1.5.0-rc.0/angular.js)
+in under 100ms, which is 1.1MB ~ 30,000 lines of JavaScript.
 
 ## Install
 
@@ -43,13 +50,14 @@ gulp.task('default', function () {
 
 ## API
 
-### strip(options)
+See [decomment](https://github.com/vitaly-t/decomment#api) for examples and more information.
 
-##### options.safe ⇒ Boolean
-* `true (default)` - keep multi-line comments that start with `/*!`
-* `false` - remove all multi-line comments
+#### options.safe ⇒ Boolean
 
-This API differs from the original. Explicity set options.safe to *false* if you want to turn off this feature. See [decomment](https://github.com/vitaly-t/decomment#api).
+* `false (default)` - remove all multi-line comments
+* `true` - keep special multi-line comments that begin with:
+ - `<!--[if` - for conditional comments in HTML
+ - `/*!` - for everything else (other than HTML)
 
 ##### options.space ⇒ Boolean
 
@@ -59,20 +67,29 @@ This API differs from the original. Explicity set options.safe to *false* if you
 NOTE: When this option is enabled, option `trim` is ignored.
 
 ##### options.trim ⇒ Boolean
+
 * `false (default)` - do not trim comments
 * `true` - remove empty lines that follow removed full-line comments
 
 NOTE: This option has no effect when option `space` is enabled.
 
-### strip.text([options]) ⇒ String
+#### decomment.text(text, [options]) ⇒ String
 
-This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
+Unlike the default **decomment**, it instructs the library that `text` is not a JSON,
+JavaScript or HTML, rather a plain text that needs no parsing or validation,
+only to remove `//` and `/**/` comments from it according to the `options`.
 
-Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this method for JSON or JavaScript, as it can break your regular expressions.
+This method is good for any text file that uses syntax `//` and `/**/` for comments,
+such as: `.CSS`, `.CPP`, `.H`, etc.
 
-### strip.html([options]) ⇒ String
+Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`),
+you should not use this method for JSON or JavaScript, as it can break your regular expressions.
 
-Unlike the default method, it instructs the library not to parse or validate the input in any way, rather assume it to be HTML, and remove all <!-- comment --> entries from it according to the `options`.
+### decomment.html(html, [options]) ⇒ String
+
+Unlike the default **decomment** method, it instructs the library not to parse
+or validate the input in any way, rather assume it to be HTML, and remove all
+`<!-- comment -->` entries from it according to the `options`.
 
 ## License
 
