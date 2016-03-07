@@ -75,7 +75,7 @@ NOTE: When this option is enabled, option `trim` is ignored.
 
 NOTE: This option has no effect when option `space` is enabled.
 
-#### strip.text(options) ⇒ String
+#### strip.text(options)
 
 Unlike the default **strip** method, it instructs the library that `text` is not a JSON,K avaScript or HTML, rather a plain text that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
 
@@ -83,7 +83,7 @@ This method is good for any text file that uses syntax `//` and `/**/` for comme
 
 Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this method for JSON or JavaScript, as it can break your regular expressions.
 
-#### strip.html(options) ⇒ String
+#### strip.html(options)
 
 Unlike the default **strip** method, it instructs the library not to parse
 or validate the input in any way, rather assume it to be HTML, and remove all
