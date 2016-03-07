@@ -52,7 +52,7 @@ gulp.task('default', function () {
 
 See [decomment](https://github.com/vitaly-t/decomment#api) for examples and more information.
 
-#### options.safe ⇒ Boolean
+##### options.safe ⇒ Boolean
 
 * `false (default)` - remove all multi-line comments
 * `true` - keep special multi-line comments that begin with:
