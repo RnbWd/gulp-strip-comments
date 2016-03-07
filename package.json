@@ -1,7 +1,7 @@
 {
   "name": "gulp-strip-comments",
   "description": "Strip comments from code",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "authors": [
     "David Wisner <dwisner6@gmail.com>",
     "Vitaly Tomilov <vitaly.tomilov@gmail.com>"
