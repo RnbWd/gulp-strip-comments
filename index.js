@@ -35,10 +35,6 @@ gulpDecomment.trim = function (options) {
     return main(options, decomment.html);
 };
 
-gulpDecomment.platform = function (options) {
-    return main(options, decomment.html);
-};
-
 gulpDecomment.safe = function (options) {
     return main(options, decomment.html);
 };
