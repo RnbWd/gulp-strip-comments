@@ -77,7 +77,7 @@ NOTE: This option has no effect when option `space` is enabled.
 
 #### strip.text(options)
 
-Unlike the default **strip** method, it instructs the library that `text` is not a JSON,K avaScript or HTML, rather a plain text that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
+Unlike the default **strip** method, it instructs the library that `text` is not a JSON, JavaScript or HTML, rather a plain text that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
 
 This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
 
