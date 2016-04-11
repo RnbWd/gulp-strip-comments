@@ -7,7 +7,7 @@
 [![npm](https://img.shields.io/npm/dt/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
 
 
-> [decomment](https://github.com/vitaly-t/decomment/) - Removes comments from JSON, JavaScript, CSS, HTML, etc.
+> Uses [decomment](https://github.com/vitaly-t/decomment/) **v0.8.6** - Removes comments from JSON, JavaScript, CSS, HTML, etc.
 
 [![NPM](https://nodei.co/npm-dl/gulp-strip-comments.png)](https://nodei.co/npm/gulp-strip-comments/)
 
