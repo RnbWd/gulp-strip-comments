@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/RnbWd/gulp-strip-comments.svg?style=flat-square)](https://travis-ci.org/RnbWd/gulp-strip-comments)
 [![Coverage Status](https://coveralls.io/repos/RnbWd/gulp-strip-comments/badge.svg?branch=master&service=github)](https://coveralls.io/github/RnbWd/gulp-strip-comments?branch=master)
 [![downloads](https://img.shields.io/npm/dt/gulp-strip-comments.svg?style=flat-square)](https://www.npmjs.com/package/gulp-strip-comments)
-[![decomment](https://img.shields.io/badge/decomment-v0.8.7-blue.svg?style=flat-square)](https://github.com/vitaly-t/decomment)
+[![decomment](https://img.shields.io/badge/decomment-v0.9.0-blue.svg?style=flat-square)](https://github.com/vitaly-t/decomment)
 [![David](https://david-dm.org/rnbwd/gulp-strip-comments.svg?style=flat-square)](https://david-dm.org/rnbwd/gulp-strip-comments)
 
 > [decomment](https://github.com/vitaly-t/decomment) - removes comments from JSON, JavaScript, CSS, HTML, etc.
