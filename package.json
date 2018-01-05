@@ -11,13 +11,14 @@
   },
   "dependencies": {
     "decomment": "^0.9.0",
-    "gulp-util": "^3.0.8",
+    "plugin-error": "^0.1.2",
     "through2": "^2.0.3"
   },
   "devDependencies": {
     "coveralls": "^2.13.1",
     "istanbul": "^0.4.5",
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "vinyl": "^2.1.0"
   },
   "files": [
     "index.js"

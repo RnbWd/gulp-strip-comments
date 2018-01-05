@@ -2,7 +2,7 @@
 
 var through = require('through2');
 var decomment = require('decomment');
-var PluginError = require('gulp-util').PluginError;
+var PluginError = require('plugin-error');
 
 function main(options, func) {
     return through.obj(function (file, enc, cb) {

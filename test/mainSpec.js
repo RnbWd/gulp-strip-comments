@@ -1,8 +1,9 @@
 'use strict';
 
+var PluginError = require('plugin-error');
 var strip = require('../');
-var util = require('gulp-util');
 var stream = require('stream');
+var Vinyl = require('vinyl');
 
 ////////////////////////
 // Positive tests;
@@ -88,14 +89,14 @@ describe("Negative:", function () {
                 err = e;
                 done();
             }
-            expect(err instanceof util.PluginError);
+            expect(err instanceof PluginError);
             expect(err.message).toBe("Streaming not supported.");
         });
     });
 });
 
 function getFakeDest(content) {
-    return new util.File({
+    return new Vinyl({
         path: './test/fixture/test.js',
         cwd: './test/',
         base: './test/fixture/',
