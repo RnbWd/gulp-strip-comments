@@ -13,6 +13,9 @@ function main(options, func) {
         if (file.isStream()) {
             cb(new PluginError("gulp-strip-comments", "Streaming not supported."));
         }
+
+        if (options.logFilename) console.log('decommenting '+ file.path);
+        
         file.contents = new Buffer(func(file.contents.toString(), options));
         this.push(file);
         return cb();
