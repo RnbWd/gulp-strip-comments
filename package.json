@@ -1,7 +1,7 @@
 {
   "name": "gulp-strip-comments",
   "description": "Strip comments from code",
-  "version": "2.5.2",
+  "version": "2.6.0",
   "authors": [
     "David Wisner <dwisner6@gmail.com>",
     "Vitaly Tomilov <vitaly.tomilov@gmail.com>"
@@ -10,15 +10,13 @@
     "url": "https://github.com/RnbWd/gulp-strip-comments/issues"
   },
   "dependencies": {
-    "decomment": "^0.9.0",
-    "plugin-error": "^0.1.2",
-    "through2": "^2.0.3"
+    "decomment": "^0.9.5",
+    "plugin-error": "^2.0.1",
+    "through2": "^4.0.2"
   },
   "devDependencies": {
-    "coveralls": "^2.13.1",
-    "istanbul": "^0.4.5",
-    "jasmine-node": "^1.14.5",
-    "vinyl": "^2.1.0"
+    "jasmine-node": "^3.0.0",
+    "vinyl": "^3.0.0"
   },
   "files": [
     "index.js"
@@ -45,8 +43,6 @@
     "url": "https://github.com/RnbWd/gulp-strip-comments"
   },
   "scripts": {
-    "test": "jasmine-node test",
-    "coverage": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test",
-    "travis": "istanbul cover ./node_modules/jasmine-node/bin/jasmine-node test --captureExceptions && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "jasmine-node test"
   }
 }
